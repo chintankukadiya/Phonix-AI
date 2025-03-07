@@ -9,7 +9,7 @@ function sendMessage() {
         document.getElementById("user-input").value = "";
 
         // Make a POST request to Flask backend (change the URL after deployment)
-        fetch('https://phonix-ai.onrender.com', {  // Replace with your Render backend URL
+        fetch('https://phonix-ai-backend.onrender.com', {  // Replace with your Render backend URL
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
