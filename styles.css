@@ -1,0 +1,149 @@
+/* Global Styles */
+body {
+    font-family: 'Lora', serif;
+    background: linear-gradient(135deg, #2B2D42, #121212); /* Dark luxurious gradient */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #F1E0C6; /* Champagne light text */
+    overflow: hidden;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2); /* Elegant shadow for depth */
+    backdrop-filter: blur(15px); /* Smooth, blurred background */
+}
+
+/* Chatbox Styling */
+.chatbox {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 100%;
+    max-width: 800px; /* Increased max-width for a wider chatbox */
+    margin-top: 30px;
+    backdrop-filter: blur(15px);
+    overflow-y: scroll;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Custom Scrollbar */
+.chatbox::-webkit-scrollbar {
+    width: 12px;
+}
+
+.chatbox::-webkit-scrollbar-track {
+    background: #2B2D42; /* Deep Charcoal for the scrollbar track */
+    border-radius: 10px;
+}
+
+.chatbox::-webkit-scrollbar-thumb {
+    background-color: #D4AF37; /* Rich Gold for the scrollbar thumb */
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.chatbox::-webkit-scrollbar-thumb:hover {
+    background-color: #F1E0C6; /* Champagne hover effect */
+}
+
+/* Chat Content */
+#chat-content {
+    height: 600px; /* Increased height for a bigger chat area */
+    overflow-y: auto;
+    border: none;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    color: #F1E0C6;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Message Bubbles */
+.chat-content p {
+    background-color: #2B2D42; /* Dark Charcoal message bubble background */
+    color: #F1E0C6;
+    padding: 14px 24px;
+    border-radius: 20px;
+    margin: 20px 0;
+    max-width: 85%;
+    word-wrap: break-word;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Deeper shadow for more luxury */
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Hover effect for messages */
+.chat-content p:hover {
+    transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+/* Input Fields */
+input {
+    width: 80%;
+    padding: 18px 22px;
+    margin-right: 20px;
+    border-radius: 25px;
+    border: 1px solid #2B2D42;
+    background-color: #121212; /* Nearly black for inputs */
+    color: #F1E0C6;
+    font-size: 1.1rem;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 15px #D4AF37; /* Gold glow on focus */
+    border: 1px solid #D4AF37;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Send Button */
+button {
+    padding: 18px 30px;
+    border-radius: 30px;
+    border: none;
+    background-color: #D4AF37; /* Rich Gold button background */
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transform-origin: center center;
+}
+
+button:hover {
+    background-color: #F1E0C6; /* Lighter gold on hover */
+    color: #2B2D42; /* Deep Charcoal on hover */
+    transform: translateY(-3px); /* Smooth hover effect */
+}
+
+button:active {
+    transform: scale(0.98); /* Button scale effect */
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 15px #D4AF37; /* Gold glow on focus */
+}
+
+/* Smooth Scroll Behavior */
+html {
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
